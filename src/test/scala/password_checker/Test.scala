@@ -14,6 +14,7 @@ class Password_Test extends AnyFunSpec with Matchers{
             Password.isValid(longEnough) shouldBe true
             Password.isValid(evenLonger) shouldBe true
         }
+        
         it("rejects passwords without a number in it"){
           val nonumber = "abcdef"
           val hasnumber = "abcdef6"
